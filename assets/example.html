@@ -1,0 +1,31 @@
+<html>
+<body>
+    <p>This example should not consume any credits for visitors if you also make sure all the widget image urls are hosted on your own server.</p>
+    <!-- Remove 'defer' if you want widget to load faster (Will affect website loading) -->
+    <script>
+        function initVG() {
+            document.querySelector('html').style.fontSize = "16px"; // 16px is the default value, this is needed now for fully eliminating spacing issues.
+            window.VG_CONFIG = {
+                ID: "fZsFP8nRhBa0YyH",
+                region: 'eu', // 'eu' or 'na'corresponding to Europe and North America
+                render: 'popup', // popup or full-width
+                stylesheets: [
+                    // Base Voiceglow CSS
+                    "./vg-build/styles.css",
+                    // Add your custom css stylesheets, Can also add relative URL ('/public/your-file.css)
+                ],
+                // autostart: true
+                // userID: 'USER_ID', // If you want to use your own user_id
+                // autostart: true, // Whether to autostart the chatbot with the proactive message
+            }
+            var VG_SCRIPT = document.createElement("script");
+            VG_SCRIPT.src = "./vg-build/vg_bundle.js";
+            document.body.appendChild(VG_SCRIPT);
+        }
+        initVG()
+    </script>
+
+</body>
+</head>
+
+</html>
