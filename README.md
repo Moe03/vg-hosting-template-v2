@@ -3,7 +3,7 @@ Use the template then it automatically should deploy a github pages then you sho
 https://yourdomain/assets/styles.css
 
 This repo's link:
-https://moe03.github.io/vg-hosting-template/assets/styles.css
+https://moe03.github.io/vg-hosting-template-v2/assets/styles.css
 
 Then you replace in the script the root url with your github pages one:
 ```html
@@ -15,7 +15,7 @@ Then you replace in the script the root url with your github pages one:
                 render: 'popup', // popup or full-width
                 stylesheets: [
                     // Base Voiceglow CSS
-                    "https://moe03.github.io/vg-hosting-template/assets/styles.css",
+                    "https://moe03.github.io/vg-hosting-template-v2/assets/vg_live_build/styles.css",
                     // Add your custom css stylesheets, Can also add relative URL ('/public/your-file.css)
                 ],
                 // autostart: true
@@ -23,7 +23,7 @@ Then you replace in the script the root url with your github pages one:
                 // autostart: true, // Whether to autostart the chatbot with the proactive message
             }
             var VG_SCRIPT = document.createElement("script");
-            VG_SCRIPT.src = "https://moe03.github.io/vg-hosting-template/assets/vg_bundle.js";
+            VG_SCRIPT.src = "https://moe03.github.io/vg-hosting-template-v2/assets/vg_live_build/vg_bundle.js";
             document.body.appendChild(VG_SCRIPT);
         }
         initVG()
