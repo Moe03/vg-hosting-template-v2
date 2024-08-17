@@ -1,3 +1,3 @@
-Version Date: 2024-07-27 13:52:57 
+Version Date: 2024-08-17 07:48:15 
 
  Extract and place these files in a folder called 'vg-build' in the root public directory of your website, ensure it is working by trying to access the styles.css (https://yourdomain.com/vg-build/styles.css)
